@@ -12,7 +12,7 @@ class Splash_screen : AppCompatActivity() {
 
         Handler().postDelayed({
             // Start the main activity after the splash time out
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Login_page::class.java)
             startActivity(intent)
 
             // Close this activity
