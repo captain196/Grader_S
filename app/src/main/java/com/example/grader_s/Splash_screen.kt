@@ -4,19 +4,36 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
+import android.view.View
+import android.view.animation.AnimationUtils
 
 class Splash_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        Handler().postDelayed({
-            // Start the main activity after the splash time out
-            val intent = Intent(this, Login_page::class.java)
-            startActivity(intent)
+        // Circle Animation
+        loadAnimation()
 
-            // Close this activity
+
+        // Moving to Login
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, MainActivity::class.java))
+            overridePendingTransition(R.anim.fade_in,0)
             finish()
-        }, 3000)
+        },4000)
+    }
+
+    fun loadAnimation(){
+
+        val circleView = findViewById<View>(R.id.circleView)
+        val logo = findViewById<View>(R.id.logo)
+
+        // Load the animation
+        val zoomInAnimation = AnimationUtils.loadAnimation(this, R.anim.zoom_in)
+
+        // Apply the animation to the circle view
+        circleView.startAnimation(zoomInAnimation)
     }
 }

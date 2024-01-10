@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash_screen">
+    tools:context=".Splash_screen"
+    android:background="#FFFFFF">
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_centerInParent="true"
-        android:text="GRADER"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/circleView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle">
 
-    </TextView>
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true">
+
+    </ImageView>
 
 </RelativeLayout>
