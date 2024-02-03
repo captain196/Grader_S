@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification"
+    android:orientation="vertical"
+    android:background="@color/theme">
+
+    <include layout="@layout/toolbar"/>
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="0.02">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/school_name"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:fontFamily="@font/langar"-->
+    <!--            android:text="Kendriya Vidhalaya Balaghat"-->
+    <!--            android:textColor="@color/button"-->
+    <!--            android:textSize="@dimen/_15sdp">-->
+
+    <!--        </TextView>-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="0.01">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/logo_sc"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:src="@drawable/logo_sc">-->
+
+    <!--        </ImageView>-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="0.02">-->
+
+    <!--        <TextView-->
+    <!--            android:background="@drawable/menu_box"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:fontFamily="@font/langar"-->
+    <!--            android:text="Notification"-->
+    <!--            android:textColor="@color/theme"-->
+    <!--            android:paddingLeft="@dimen/_10sdp"-->
+    <!--            android:paddingRight="@dimen/_10sdp"-->
+    <!--            android:paddingTop="@dimen/_5sdp"-->
+    <!--            android:paddingBottom="@dimen/_5sdp"-->
+    <!--            android:textSize="@dimen/_15sdp">-->
+
+    <!--        </TextView>-->
+
+    <!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/recycl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,16 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_page">
+    android:orientation="vertical"
+    android:background="@color/theme">
 
-    <TextView
-        android:text="Hello Welcome"
-        android:layout_centerInParent="true"
-        android:textSize="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerInParent="true"
+            android:contentDescription="description"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.013"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/userIDEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="User ID"
+            android:textColor="@color/button"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:textColorHint="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.013"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/schoolIDEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="School ID"
+            android:inputType="numberDecimal"
+            android:textColor="@color/button"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:textColorHint="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.013"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:baselineAligned="false"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/button">
+
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/button"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textColorHint="@color/grey">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.006">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:gravity="right"
+            android:text="Forget Password ?"
+            android:textColor="@color/button"
+            android:textSize="@dimen/_12sdp"
+            app:fontFamily="@font/andika_new_basic" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/langar"
+            android:padding="12dp"
+            android:text="login"
+            android:textSize="@dimen/_14sdp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/register_in_text"
+            android:textSize="@dimen/_12sdp"
+            app:fontFamily="@font/andika_new_basic"
+            android:textColor="@color/grey"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+    </RelativeLayout>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/logoImageView"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:contentDescription="description"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:src="@drawable/ic_launcher_foreground" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/usernameEditText"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/logoImageView"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:hint="yugantt"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:padding="12dp"/>-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/passwordEditText"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/usernameEditText"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:hint="password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:padding="12dp"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/loginButton"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/passwordEditText"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="login"-->
+    <!--        android:background="@color/button"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:padding="12dp"/>-->
+
+
+
+
+</LinearLayout>

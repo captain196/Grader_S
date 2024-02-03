@@ -12,13 +12,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        animation()
     }
 
-    fun animation(){
-        val logo = findViewById<View>(R.id.logo)
-        val zoomInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_up)
 
-        logo.startAnimation(zoomInAnimation)
-    }
 }

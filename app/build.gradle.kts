@@ -47,4 +47,7 @@ dependencies {
 
     //responsive
     implementation("com.intuit.sdp:sdp-android:1.1.0")
+
+    implementation("com.google.android.material:material:1.4.0")
+
 }

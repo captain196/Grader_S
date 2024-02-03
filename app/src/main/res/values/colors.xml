@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="theme">#E8E2D7</color>
     <color name="button">#585652</color>
+    <color name="hint_color">#999999</color>
+    <color name="grey">#7C7B7B</color>
 </resources>

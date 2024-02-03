@@ -19,10 +19,10 @@ class Splash_screen : AppCompatActivity() {
 
         // Moving to Login
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Login_page::class.java))
             overridePendingTransition(R.anim.fade_in,0)
             finish()
-        },4000)
+        },3000)
     }
 
     fun loadAnimation(){

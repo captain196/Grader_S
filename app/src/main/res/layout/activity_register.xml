@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@color/theme"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerInParent="true"
+            android:contentDescription="description"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp">
+
+            <EditText
+                android:id="@+id/first_name_Text"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="First name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/last_name_Text"
+                android:layout_width="@dimen/_95sdp"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/first_name_Text"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Last name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColorHint="@color/grey" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_7sdp">
+
+            <EditText
+                android:id="@+id/address_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColorHint="@color/grey" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_7sdp">
+
+            <EditText
+                android:id="@+id/school_code_Text"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:hint="School ID"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/phone_no_Text"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Phone no."
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:inputType="numberDecimal"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColorHint="@color/grey" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_7sdp">
+
+            <EditText
+                android:id="@+id/email_id_Text"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Email ID"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textColorHint="@color/grey" />
+
+            <EditText
+                android:id="@+id/class_Text"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Class"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textColorHint="@color/grey" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:textColor="@color/button"
+            android:paddingRight="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/school_name_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="School Name"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textColorHint="@color/grey" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l6"
+            android:textColor="@color/button"
+            android:paddingRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:baselineAligned="false"
+                app:hintEnabled="false"
+                app:passwordToggleTint="@color/button">
+
+                <EditText
+                    android:id="@+id/create_password_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/button"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:background="@drawable/roundbox_edittext"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:hint="Create Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textColorHint="@color/grey" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.001">
+
+        <LinearLayout
+            android:id="@+id/l7"
+            android:textColor="@color/button"
+            android:paddingRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="0dp"
+                android:baselineAligned="false"
+                app:hintEnabled="false"
+                app:passwordToggleTint="@color/button">
+
+                <EditText
+                    android:id="@+id/re_enter_passsword_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/button"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:background="@drawable/roundbox_edittext"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:hint="Re-enter Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textColorHint="@color/grey" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/caveat_brush"
+            android:padding="12dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/log_in_text"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_12sdp"
+            app:fontFamily="@font/andika_new_basic" />
+
+    </RelativeLayout>
+
+</LinearLayout>

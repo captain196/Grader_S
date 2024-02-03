@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Grader_S</string>
+    <string name="register_in_text">Dont\'t have account? <b><u>Register Here</u></b></string>
+    <string name="log_in_text">Already have an account? <b><u>Login Here</u></b></string>
+
+    <string name="navigation_open">Open navigation</string>
+    <string name="navigation_close">Close navigation</string>
+
 </resources>
