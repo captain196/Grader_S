@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <gradient android:startColor="@color/profile_page"
+        android:endColor="#1CFFFFFF"
+        android:angle="315"
+        android:centerX="5"
+        android:centerY="2"/>
+
+    <corners android:bottomLeftRadius="@dimen/_100sdp"/>
+</shape>

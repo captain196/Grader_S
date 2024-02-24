@@ -9,227 +9,67 @@
     android:id="@+id/drawer_l1">
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/profile_logo" />
+        <include layout="@layout/toolbar_dashboard"/>
 
-        <TextView
-            android:id="@+id/student_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/profile"
-            android:layout_centerHorizontal="true"
-            android:text="Shreya"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+        <androidx.core.widget.NestedScrollView
 
-        <TextView
-            android:id="@+id/class_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/student_name"
-            android:layout_centerHorizontal="true"
-            android:text="9th 'A'"
-            android:textColor="@color/button"
-            android:textStyle="bold" />
-
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:layout_height="match_parent">
 
-            <include layout="@layout/toolbar_dashboard"/>
-
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.02">
-
-                <ImageView
-                    android:id="@+id/logo_sc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logo_sc"
-                    android:layout_centerInParent="true">
-
-                </ImageView>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.01">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/school_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
+                    android:text="Subject"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
                     android:fontFamily="@font/langar"
-                    android:text="Kendriya Vidhalaya Balaghat"
-                    android:textColor="@color/button"
-                    android:textSize="@dimen/_15sdp">
-
-                </TextView>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.005"/>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.03"
-                android:gravity="center">
+                    android:textColor="@color/button"/>
 
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/notificatio_btn"
-                    android:layout_width="@dimen/_130sdp"
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_6sdp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Notification"
-                    android:background="@drawable/btn2_background"
-                    android:textAllCaps="false"
-                    android:drawableEnd="@drawable/ic_action_notifications"
-                    android:paddingRight="@dimen/_10sdp"/>
+                    android:orientation="horizontal" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/assignment_btn"
-                    android:layout_width="@dimen/_130sdp"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Features"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
                     android:fontFamily="@font/langar"
-                    android:text="Assignments"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/btn3_background"
-                    android:textAllCaps="false"
-                    android:drawableStart="@drawable/ic_action_notifications"
-                    android:paddingLeft="@dimen/_10sdp" />
+                    android:textColor="@color/button"/>
 
 
-            </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.03"
-                android:gravity="center">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/r2"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="wrap_content" />
 
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/syallabus_btn"
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Syallabus"
-                    android:background="@drawable/btn2_background"
-                    android:textAllCaps="false"
-                    android:drawableEnd="@drawable/ic_action_notifications"
-                    android:paddingRight="@dimen/_10sdp"/>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/attendence_btn"
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Attendence"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/btn3_background"
-                    android:textAllCaps="false"
-                    android:drawableStart="@drawable/ic_action_notifications"
-                    android:paddingLeft="@dimen/_10sdp" />
+            </LinearLayout>
 
 
-            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.03"
-                android:gravity="center">
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/time_table_btn"
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Time Table"
-                    android:background="@drawable/btn2_background"
-                    android:textAllCaps="false"
-                    android:drawableEnd="@drawable/ic_action_notifications"
-                    android:paddingRight="@dimen/_10sdp"/>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/profile_btn"
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Profile"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/btn3_background"
-                    android:textAllCaps="false"
-                    android:drawableStart="@drawable/ic_action_notifications"
-                    android:paddingLeft="@dimen/_10sdp" />
-
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.03"
-                android:gravity="center">
-
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/exam_result_btn"
-                    android:layout_width="@dimen/_130sdp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Exam Result"
-                    android:background="@drawable/btn2_background"
-                    android:textAllCaps="false"
-                    android:drawableEnd="@drawable/ic_action_notifications"
-                    android:paddingRight="@dimen/_10sdp"/>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/holiday_btn"
-                    android:layout_width="@dimen/_130sdp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/langar"
-                    android:text="Holidays"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/btn3_background"
-                    android:textAllCaps="false"
-                    android:drawableStart="@drawable/ic_action_notifications"
-                    android:paddingLeft="@dimen/_10sdp" />
-
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.04"/>
-
-
-        </LinearLayout>
-
-
-    </RelativeLayout>
+    </LinearLayout>
 
 
     <com.google.android.material.navigation.NavigationView
@@ -245,3 +85,5 @@
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+

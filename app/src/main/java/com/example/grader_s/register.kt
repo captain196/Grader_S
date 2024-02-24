@@ -15,9 +15,8 @@ class register : AppCompatActivity() {
 
         val login1 = findViewById<MaterialTextView>(R.id.login_text)
         login1.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Login_page::class.java))
             overridePendingTransition(R.anim.fade_in,0)
-            finish()
         })
     }
 }

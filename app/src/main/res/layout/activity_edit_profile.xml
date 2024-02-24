@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_profile"
+    android:background="@color/profile_page">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_back_2"/>
+
+    <include layout="@layout/toolbar_profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/edit_page_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/student_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Student Name"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Shrey patle"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/button"
+            android:textColorHint="@color/grey" />
+
+
+        <TextView
+            android:id="@+id/parents_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Parent Name"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/parent_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Susan Lee"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/button"
+            android:textColorHint="@color/grey" />
+
+        <TextView
+            android:id="@+id/phone_no_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Phone No."
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/phone_no_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="+91 987654321"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/button"
+            android:textColorHint="@color/grey" />
+
+        <TextView
+            android:id="@+id/email_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Email ID"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/email_id_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="shreypatle@123.com"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/button"
+            android:textColorHint="@color/grey" />
+
+        <TextView
+            android:id="@+id/class_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Class"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/class_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="9th A"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/button"
+            android:textColorHint="@color/grey" />
+
+        <TextView
+            android:id="@+id/Address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Address"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/address_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/roundbox_edittext"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="diadnakdn adnioamdoaimd"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/button"
+            android:textColorHint="@color/grey" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/caveat_brush"
+        android:padding="12dp"
+        android:text="Save"
+        android:textSize="@dimen/_14sdp"/>
+
+</RelativeLayout>

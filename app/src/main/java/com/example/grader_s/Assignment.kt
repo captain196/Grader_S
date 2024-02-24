@@ -10,10 +10,9 @@ class Assignment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_assignment)
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar_1)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
 
         toolbar.setNavigationOnClickListener {
-            // Handle the click event here
             startActivity(Intent(this, dashboard::class.java))
             overridePendingTransition(R.anim.fade_in,0)// or perform any other action
         }

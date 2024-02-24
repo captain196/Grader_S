@@ -5,5 +5,7 @@
     <color name="theme">#E8E2D7</color>
     <color name="button">#585652</color>
     <color name="hint_color">#999999</color>
+    <color name="profile_page">#3C3322</color>
     <color name="grey">#7C7B7B</color>
+    <color name="m3">#F4F1EC</color>
 </resources>

@@ -3,7 +3,9 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/andika_new_basic</item>
         <item>@font/caveat_brush</item>
+        <item>@font/fredoka_one</item>
         <item>@font/gidugu</item>
+        <item>@font/kurale</item>
         <item>@font/langar</item>
     </array>
 </resources>

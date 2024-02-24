@@ -148,10 +148,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/button_background"
-            android:fontFamily="@font/langar"
+            android:fontFamily="@font/caveat_brush"
             android:padding="12dp"
             android:text="login"
-            android:textSize="@dimen/_14sdp" />
+            android:textSize="@dimen/_14sdp"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/register"
@@ -168,47 +168,6 @@
 
 
     </RelativeLayout>
-
-    <!--    <ImageView-->
-    <!--        android:id="@+id/logoImageView"-->
-    <!--        android:layout_width="150dp"-->
-    <!--        android:layout_height="150dp"-->
-    <!--        android:contentDescription="description"-->
-    <!--        android:layout_centerInParent="true"-->
-    <!--        android:src="@drawable/ic_launcher_foreground" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/usernameEditText"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_below="@id/logoImageView"-->
-    <!--        android:layout_marginTop="16dp"-->
-    <!--        android:hint="yugantt"-->
-    <!--        android:inputType="textEmailAddress"-->
-    <!--        android:padding="12dp"/>-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/passwordEditText"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_below="@id/usernameEditText"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:hint="password"-->
-    <!--        android:inputType="textPassword"-->
-    <!--        android:padding="12dp"/>-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/loginButton"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_below="@id/passwordEditText"-->
-    <!--        android:layout_marginTop="16dp"-->
-    <!--        android:text="login"-->
-    <!--        android:background="@color/button"-->
-    <!--        android:textColor="@android:color/white"-->
-    <!--        android:padding="12dp"/>-->
-
-
 
 
 </LinearLayout>

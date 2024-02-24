@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:navigationIcon="@drawable/back_arrow">
+
+
+    <TextView
+        android:id="@+id/edit_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="@font/langar"
+        android:text="+ Edit"
+        android:textColor="@color/theme"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp">
+
+    </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
