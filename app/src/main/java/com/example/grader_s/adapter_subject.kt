@@ -7,12 +7,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.facebook.shimmer.ShimmerFrameLayout
 
 
 class adapter_subject(private val items: List<dataclass_subject>) :
     RecyclerView.Adapter<adapter_subject.ViewHolder>() {
 
+
     private var onItemClick: ((position: Int) -> Unit)? = null
+
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

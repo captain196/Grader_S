@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="257"
+    android:viewportHeight="114"
+    android:width="257dp"
+    android:height="114dp">
+
+    <!-- Rectangle background -->
+    <path
+        android:pathData="M0 20C0 8.9543 8.9543 0 20 0H237C248.046 0 257 8.95431 257 20V114H0V20Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- LinearLayout to hold TextView at center -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- TextView to display the date status -->
+        <TextView
+            android:id="@+id/textDateStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#585652"
+            android:text="Status"
+            android:visibility="gone" /> <!-- Initially set to gone -->
+
+    </LinearLayout>
+
+</vector>
+

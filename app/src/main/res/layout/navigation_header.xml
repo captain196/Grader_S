@@ -16,6 +16,7 @@
         android:layout_marginBottom="@dimen/_40sdp">
     
         <ImageView
+            android:id="@+id/navi_profile_image"
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_60sdp"
             android:src="@drawable/profile_logo">
@@ -27,13 +28,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Shrey Patel"
+            android:id="@+id/navi_student_name"
             android:textColor="@color/theme"
             android:fontFamily="@font/andika_new_basic"/>
 
 
     </LinearLayout>
-
-
-    
 
 </LinearLayout>

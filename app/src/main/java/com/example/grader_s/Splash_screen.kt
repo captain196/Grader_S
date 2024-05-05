@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.view.animation.AnimationUtils
+import com.google.firebase.FirebaseApp
 
 class Splash_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,7 @@ class Splash_screen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         // Circle Animation
+
         loadAnimation()
 
 

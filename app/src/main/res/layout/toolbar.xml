@@ -21,8 +21,9 @@
         </TextView>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/page_logo"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
             android:layout_gravity="right"
             android:layout_marginRight="@dimen/_10sdp"
             android:src="@drawable/ic_action_school" />

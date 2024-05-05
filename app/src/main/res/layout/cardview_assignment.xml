@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_12sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/profile_text_box"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/card_assign_image1"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/logo_sc">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/card_assign_header_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:text="General"
+                    android:textColor="@color/button"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right"
+                    android:text="Today"
+                    android:textColor="@color/button"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="italic">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_assign_content1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/andika_new_basic"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="Today our students of class X are answed dawd dawd dawd dawd dawd dawd dawda dawd dawdad awdawdaw dawd aw dawd awdawring their Social Science paper."
+                android:textColor="@color/button"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:textSize="@dimen/_9sdp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

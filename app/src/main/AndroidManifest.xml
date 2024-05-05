@@ -2,52 +2,97 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Grader_S"
         tools:targetApi="31">
         <activity
+            android:name=".Holidays"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Time_table"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Grader_S" />
+        <activity
+            android:name=".Syllabus"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".assignment_data"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".change_password"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".forget_page"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Notification_content"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Edit_profile"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Subject_syllabus_content"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Subject_syllabus"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Profile"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Assignment"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Notification"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".Attendence"
-            android:exported="false" />
+            android:name=".Attendance"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".dashboard"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".register"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Login_page"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Splash_screen"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -56,7 +101,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"

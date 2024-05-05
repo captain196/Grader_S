@@ -50,13 +50,15 @@
                         </ImageView>
 
                         <TextView
+                            android:id="@+id/header_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/allerta_stencil"
                             android:text="General"
                             android:textColor="@color/button"
-                            android:layout_width="wrap_content"
-                            android:fontFamily="@font/fredoka_one"
-                            android:layout_centerInParent="true"
                             android:textSize="@dimen/_15sdp"
-                            android:layout_height="wrap_content">
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -74,7 +76,10 @@
 
                 </LinearLayout>
 
+
+
                 <TextView
+                    android:id="@+id/content"
                     android:gravity="center"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginBottom="@dimen/_20sdp"

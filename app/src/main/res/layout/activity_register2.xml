@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_2"
+    android:background="@color/theme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0003"
+        android:gravity="center">
+
+        <TextView
+            android:text="Change Password"
+            android:textColor="@color/button"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/andika_new_basic"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone_no_text_l"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.00007">
+
+            <TextView
+                android:text="Enter Phone Number"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:textColor="@color/button"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/andika_new_basic"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.00024"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/school_name_Text"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/button"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:background="@drawable/roundbox_edittext"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:hint="+91"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/phone_number_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/button"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:background="@drawable/roundbox_edittext"
+                    android:fontFamily="@font/andika_new_basic"
+                    android:hint="Phone Number"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/send_otp_button_l"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.0003">
+
+            <Button
+                android:id="@+id/send_otp2"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/caveat_brush"
+                android:padding="12dp"
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14sdp"/>
+
+        </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/verfy_text_l"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.00007">
+
+        <TextView
+            android:text="Enter Verifivation Code"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:textColor="@color/button"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/andika_new_basic"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/otp_text_l"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.00024"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:textColor="@color/button"
+            android:paddingRight="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:background="@drawable/roundbox_edittext"
+                android:fontFamily="@font/andika_new_basic"
+                android:hint="Enter Otp"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textColorHint="@color/grey" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verify_otp_button_l"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0003">
+
+        <Button
+            android:id="@+id/verifyButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/caveat_brush"
+            android:padding="12dp"
+            android:layout_centerVertical="true"
+            android:text="Verify Otp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.00007">
+
+            <TextView
+                android:id="@+id/create_text"
+
+                android:text="Create Password"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:textColor="@color/button"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/andika_new_basic"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_password_Text_l"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.00024"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/l6"
+
+                android:textColor="@color/button"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:baselineAligned="false"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="@color/button">
+
+                    <EditText
+                        android:id="@+id/create_password_Text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/button"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:background="@drawable/roundbox_edittext"
+                        android:fontFamily="@font/andika_new_basic"
+                        android:hint="Create Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:textColorHint="@color/grey" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.00007">
+
+            <TextView
+                android:id="@+id/re_Text4"
+                android:text="Re-Enter Password"
+
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:textColor="@color/button"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/andika_new_basic"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_enter_passsword_Text_l"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.00024"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/l7"
+                android:textColor="@color/button"
+
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:baselineAligned="false"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="@color/button">
+
+                    <EditText
+                        android:id="@+id/re_enter_passsword_Text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/button"
+                        android:paddingRight="@dimen/_2sdp"
+                        android:background="@drawable/roundbox_edittext"
+                        android:fontFamily="@font/andika_new_basic"
+                        android:hint="Re-enter Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:textColorHint="@color/grey" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registerButton_l"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0003"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/registerButton4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/caveat_brush"
+            android:padding="12dp"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp"/>
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="0.00007">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/unique_id_text"-->
+<!--            android:text="Unique ID"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_marginLeft="@dimen/_50sdp"-->
+<!--            android:textColor="@color/button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:fontFamily="@font/andika_new_basic"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--        </TextView>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/user_id_l"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="0.00015"-->
+<!--        android:gravity="center">-->
+
+<!--    <LinearLayout-->
+<!--        android:textColor="@color/button"-->
+<!--        android:paddingRight="@dimen/_2sdp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/_50sdp"-->
+<!--        android:layout_marginRight="@dimen/_50sdp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/user_id_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/button"-->
+<!--            android:visibility="gone"-->
+<!--            android:paddingRight="@dimen/_5sdp"-->
+<!--            android:background="@drawable/roundbox_edittext"-->
+<!--            android:fontFamily="@font/andika_new_basic"-->
+<!--            android:text="23141"-->
+<!--            android:inputType="text"-->
+<!--            android:paddingLeft="12dp"-->
+<!--            android:paddingTop="@dimen/_4sdp"-->
+<!--            android:paddingBottom="@dimen/_4sdp"-->
+<!--            android:textColorHint="@color/grey" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/login_l"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="0.0002"-->
+<!--        android:gravity="center">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/login_text"-->
+<!--            android:text="Click To Log In"-->
+<!--            android:visibility="gone"-->
+<!--            android:textColor="@color/button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:fontFamily="@font/andika_new_basic"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--        </TextView>-->
+
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>
+</RelativeLayout>

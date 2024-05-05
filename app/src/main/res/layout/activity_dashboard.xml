@@ -8,14 +8,15 @@
     android:background="@color/theme"
     android:id="@+id/drawer_l1">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <include layout="@layout/toolbar_dashboard"/>
+        <include layout="@layout/toolbar_dashboard" />
+
+        <include layout="@layout/shimmer_layout_dasboard" />
 
         <androidx.core.widget.NestedScrollView
 
@@ -37,13 +38,32 @@
                     android:textColor="@color/button"/>
 
 
-
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/r1"
                     android:layout_width="match_parent"
                     android:layout_marginTop="@dimen/_6sdp"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Activities"-->
+<!--                    android:layout_marginLeft="@dimen/_15sdp"-->
+<!--                    android:layout_marginTop="@dimen/_30sdp"-->
+<!--                    android:fontFamily="@font/langar"-->
+<!--                    android:textColor="@color/button"/>-->
+
+<!--                <com.denzcoskun.imageslider.ImageSlider-->
+<!--                    android:id="@+id/image_slider"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="@dimen/_300sdp"-->
+<!--                    android:background="@color/white"-->
+<!--                    app:iss_auto_cycle="true"-->
+<!--                    app:iss_no_dots="true"-->
+<!--                    app:iss_period="1000"-->
+<!--                    app:iss_delay="3000"-->
+<!--                    app:iss_placeholder="@drawable/transparent"/>-->
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -56,11 +76,12 @@
 
 
 
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/r2"
                     android:layout_width="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:nestedScrollingEnabled="false"
                     android:layout_height="wrap_content" />
 

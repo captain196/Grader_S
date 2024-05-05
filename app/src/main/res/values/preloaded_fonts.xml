@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta_stencil</item>
         <item>@font/andika_new_basic</item>
         <item>@font/caveat_brush</item>
         <item>@font/fredoka_one</item>
         <item>@font/gidugu</item>
+        <item>@font/grenze_light</item>
+        <item>@font/grenze_thin</item>
         <item>@font/kurale</item>
         <item>@font/langar</item>
     </array>

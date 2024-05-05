@@ -33,10 +33,11 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/dashboard_logo1"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
         android:layout_gravity="right"
-        android:src="@drawable/logo_sc"/>
+        android:layout_marginRight="@dimen/_10sdp" />
 
     <!--    <com.google.android.material.appbar.AppBarLayout-->
     <!--        android:layout_width="match_parent"-->

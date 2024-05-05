@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class adapter_notification(private val items: List<data_class_assignment>) :
+class adapter_notification(private val items: List<data_class_notification>) :
     RecyclerView.Adapter<adapter_notification.ViewHolder>() {
 
     private var onItemClick: ((position: Int) -> Unit)? = null
@@ -45,11 +45,13 @@ class adapter_notification(private val items: List<data_class_assignment>) :
         private val imageView: ImageView = itemView.findViewById(R.id.card_assign_image)
         private val textView1: TextView = itemView.findViewById(R.id.card_assign_header_title)
         private val textView2: TextView = itemView.findViewById(R.id.card_assign_content)
+        private val date1: TextView = itemView.findViewById(R.id.date2)
 
-        fun bind(item: data_class_assignment) {
+        fun bind(item: data_class_notification) {
             imageView.setImageResource(item.imageResId)
             textView1.text = item.header
             textView2.text = item.content
+            date1.text = item.datee
         }
     }
 }

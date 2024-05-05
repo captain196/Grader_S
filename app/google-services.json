@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "156538689307",
+    "firebase_url": "https://graders-1c047-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "graders-1c047",
+    "storage_bucket": "graders-1c047.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156538689307:android:e08a16250978bc3c5aa5be",
+        "android_client_info": {
+          "package_name": "com.example.grader_s"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRrK6YLZbOgZUIkmUxWggY99KoGKQO44Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
