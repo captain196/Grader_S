@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
 
     <application
         android:allowBackup="true"
@@ -17,80 +19,92 @@
         android:theme="@style/Theme.Grader_S"
         tools:targetApi="31">
         <activity
-            android:name=".Holidays"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:name="com.Grader.grader_s.gallery_2"
+            android:exported="false" />
         <activity
-            android:name=".Time_table"
+            android:name="com.Grader.grader_s.Gallery"
+            android:exported="false" />
+        <activity
+            android:name="com.Grader.grader_s.Banner"
+            android:exported="false" />
+        <activity
+            android:name="com.Grader.grader_s.Fees"
+            android:exported="false" />
+        <activity
+            android:name="com.Grader.grader_s.Holidays"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Grader.grader_s.Time_table"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Grader_S" />
         <activity
-            android:name=".Syllabus"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".assignment_data"
+            android:name="com.Grader.grader_s.Syllabus"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".change_password"
+            android:name="com.Grader.grader_s.assignment_data"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".forget_page"
+            android:name="com.Grader.grader_s.change_password"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".register_2"
+            android:name="com.Grader.grader_s.forget_page"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Notification_content"
+            android:name="com.Grader.grader_s.register_2"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Edit_profile"
+            android:name="com.Grader.grader_s.Notification_content"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Subject_syllabus_content"
+            android:name="com.Grader.grader_s.Edit_profile"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Subject_syllabus"
+            android:name="com.Grader.grader_s.Subject_syllabus_content"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Profile"
+            android:name="com.Grader.grader_s.Subject_syllabus"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Assignment"
+            android:name="com.Grader.grader_s.Profile"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Notification"
+            android:name="com.Grader.grader_s.Assignment"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Attendance"
+            android:name="com.Grader.grader_s.Notification"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".dashboard"
+            android:name="com.Grader.grader_s.Attendance"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".register"
+            android:name="com.Grader.grader_s.dashboard"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Login_page"
+            android:name="com.Grader.grader_s.register"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Splash_screen"
+            android:name="com.Grader.grader_s.Login_page"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Grader.grader_s.Splash_screen"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -100,7 +114,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.Grader.grader_s.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 

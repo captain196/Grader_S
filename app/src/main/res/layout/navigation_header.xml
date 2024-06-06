@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Shrey Patel"
             android:id="@+id/navi_student_name"
-            android:textColor="@color/theme"
+            android:textColor="@color/text_2"
             android:fontFamily="@font/andika_new_basic"/>
 
 

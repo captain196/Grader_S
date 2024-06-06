@@ -4,23 +4,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/theme">
+    android:background="@color/theme2">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login_page_image">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/animated">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/book_image">
+
+        </ImageView>
+
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.05">
+        android:layout_weight="0.017">
 
-        <ImageView
-            android:id="@+id/logoImageView"
-            android:layout_width="@dimen/_130sdp"
-            android:layout_height="@dimen/_130sdp"
-            android:layout_centerInParent="true"
-            android:contentDescription="description"
-            android:src="@drawable/logo_11" />
+        <TextView
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_back"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="LOGIN"
+            android:textColor="@color/text_2"
+            android:textSize="@dimen/_20sdp">
+
+        </TextView>
 
     </RelativeLayout>
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,6 +75,7 @@
             android:background="@drawable/roundbox_edittext"
             android:fontFamily="@font/andika_new_basic"
             android:hint="User ID"
+            android:textSize="@dimen/_12sdp"
             android:textColor="@color/button"
             android:inputType="numberDecimal"
             android:paddingLeft="12dp"
@@ -51,6 +90,8 @@
         android:layout_height="0dp"
         android:layout_weight="0.013"
         android:gravity="center">
+
+
 
         <EditText
             android:id="@+id/schoolIDEditText"
@@ -61,6 +102,7 @@
             android:background="@drawable/roundbox_edittext"
             android:fontFamily="@font/andika_new_basic"
             android:hint="School ID"
+            android:textSize="@dimen/_12sdp"
             android:inputType="numberDecimal"
             android:textColor="@color/button"
             android:paddingLeft="12dp"
@@ -76,36 +118,28 @@
         android:layout_weight="0.013"
         android:gravity="center">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginRight="@dimen/_50sdp"
-            android:baselineAligned="false"
-            app:hintEnabled="false"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/button">
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
                 android:background="@drawable/roundbox_edittext"
                 android:fontFamily="@font/andika_new_basic"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:textColor="@color/button"
                 android:paddingLeft="12dp"
+                android:textSize="@dimen/_12sdp"
                 android:paddingTop="@dimen/_4sdp"
+                android:drawableRight="@drawable/visibility_off"
                 android:paddingBottom="@dimen/_4sdp"
+                android:paddingRight="@dimen/_10sdp"
                 android:textColorHint="@color/grey">
 
             </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
 
     </RelativeLayout>
 
@@ -113,7 +147,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.006">
+        android:layout_weight="0.009">
 
 
         <com.google.android.material.textview.MaterialTextView
@@ -126,6 +160,7 @@
             android:text="Forget Password ?"
             android:textColor="@color/button"
             android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
             app:fontFamily="@font/andika_new_basic" />
 
     </RelativeLayout>
@@ -134,23 +169,34 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.04"
+        android:layout_weight="0.015"
         android:gravity="center">
 
         <Button
             android:id="@+id/loginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/button_background"
-            android:fontFamily="@font/caveat_brush"
-            android:padding="12dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
             android:text="login"
-            android:textSize="@dimen/_14sdp"/>
+            android:paddingTop="@dimen/_3sdp"
+            android:textSize="@dimen/_17sdp"/>
 
 
     </RelativeLayout>
 
 
 </LinearLayout>
+
+<!--<com.google.android.material.textfield.TextInputLayout-->
+<!--android:id="@+id/textInputLayoutPassword"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginLeft="@dimen/_50sdp"-->
+<!--android:layout_marginRight="@dimen/_50sdp"-->
+<!--android:baselineAligned="false"-->
+<!--app:hintEnabled="false"-->
+<!--app:passwordToggleEnabled="true"-->
+<!--app:passwordToggleTint="@color/button">-->

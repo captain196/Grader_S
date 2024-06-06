@@ -7,23 +7,32 @@
     tools:context=".Splash_screen"
     android:background="#FFFFFF">
 
-    <ImageView
-        android:id="@+id/circleView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:background="@drawable/circle">
+        app:lottie_rawRes="@raw/animation_logo"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
-    </ImageView>
+<!--    <ImageView-->
+<!--        android:id="@+id/circleView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:background="@drawable/circle">-->
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_80sdp"
-        android:src="@drawable/logo_11"
-        android:layout_centerInParent="true">
+<!--    </ImageView>-->
 
-    </ImageView>
+<!--    <ImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_width="@dimen/_80sdp"-->
+<!--        android:layout_height="@dimen/_80sdp"-->
+<!--        android:src="@drawable/logo_black"-->
+<!--        android:layout_centerInParent="true">-->
+
+<!--    </ImageView>-->
 
 
 </RelativeLayout>

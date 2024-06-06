@@ -5,50 +5,451 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Attendance"
-    android:background="@color/theme">
+    android:background="@color/theme2">
 
-    <include layout="@layout/toolbar" />
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
-        app:layout_constraintGuide_percent="0.37">
+        android:layout_below="@id/toolbar">
 
-        <!-- Calendar Layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_calendar_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.37" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Percentage Wise"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:fontFamily="@font/langar"
+                android:textColor="@color/theme3"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hammersmith_one"
+                            android:text="Current Attendance"
+                            android:textColor="#F19000"
+                            android:textSize="@dimen/_8sdp"
+                            android:paddingLeft="@dimen/_10sdp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.8">
+
+
+                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                            android:id="@+id/attendance_progressbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:progress="0"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            app:indicatorColor="#00BCD4"
+                            android:secondaryProgressTint="@color/grey"
+                            app:trackCornerRadius="10dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:id="@+id/progress_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo_bhai"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:text="0%"
+                            android:textSize="@dimen/_8sdp"
+                            android:textColor="#00BCD4">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Classes"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/langar"
+                            android:textColor="@color/theme3"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:cardElevation="5dp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="@dimen/_12sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.5"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="@dimen/_5sdp"
+                                        android:gravity="center_vertical">
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Classes done  = "
+                                            android:textColor="#F19000"
+                                            android:fontFamily="@font/hammersmith_one"
+                                            android:textSize="@dimen/_8sdp"
+                                            android:paddingLeft="@dimen/_10sdp">
+
+                                        </TextView>
+
+                                        <TextView
+                                            android:id="@+id/class_done"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/baloo_bhai"
+                                            android:gravity="right"
+                                            android:paddingRight="@dimen/_15sdp"
+                                            android:text="231"
+                                            android:textColor="#F19000"
+                                            android:textSize="@dimen/_8sdp">
+
+                                        </TextView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.5"
+                                        android:paddingBottom="@dimen/_5sdp"
+                                        android:orientation="horizontal"
+                                        android:gravity="center_vertical">
+
+                                        <TextView
+                                            android:gravity="center"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Classes Left   = "
+                                            android:textColor="#F19000"
+                                            android:fontFamily="@font/hammersmith_one"
+                                            android:textSize="@dimen/_8sdp"
+                                            android:paddingLeft="@dimen/_10sdp">
+
+                                        </TextView>
+
+                                        <TextView
+                                            android:id="@+id/class_left"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/baloo_bhai"
+                                            android:gravity="right"
+                                            android:paddingRight="@dimen/_15sdp"
+                                            android:text="2313"
+                                            android:textColor="#F19000"
+                                            android:textSize="@dimen/_8sdp">
+
+                                        </TextView>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Attendance Prediction"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/langar"
+                            android:textColor="@color/theme3"
+                            android:layout_marginLeft="@dimen/_5sdp"/>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardElevation="5dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_16sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="@dimen/_12sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_3sdp">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.14"
+                                        android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/hammersmith_one"
+                                            android:text="Maximum Reachable"
+                                            android:textColor="#F19000"
+                                            android:textSize="@dimen/_8sdp">
+
+                                        </TextView>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.13">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal"
+                                            android:gravity="center">
+
+
+                                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                                            android:id="@+id/max_progressbar"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.7"
+                                            android:progress="0"
+                                            android:layout_centerInParent="true"
+                                            android:secondaryProgressTint="@color/grey"
+                                            android:paddingLeft="@dimen/_5sdp"
+                                            android:paddingRight="@dimen/_5sdp"
+                                            app:indicatorColor="#41DA09"
+                                            app:trackCornerRadius="100dp">
+
+                                        </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:id="@+id/max_progress_percent"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/baloo_bhai"
+                                                android:paddingRight="@dimen/_3sdp"
+                                                android:text="0%"
+                                                android:textSize="@dimen/_8sdp"
+                                                android:textColor="#41DA09">
+
+                                            </TextView>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/hammersmith_one"
+                                        android:text="Minimum Reachable"
+                                        android:textColor="#F19000"
+                                        android:textSize="@dimen/_8sdp">
+
+                                    </TextView>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.13">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center">
+
+
+                                        <com.google.android.material.progressindicator.LinearProgressIndicator
+                                            android:id="@+id/min_progressbar"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.7"
+                                            android:progress="0"
+                                            android:layout_centerInParent="true"
+                                            android:secondaryProgressTint="@color/grey"
+                                            app:indicatorColor="#DC0F00"
+                                            android:paddingLeft="@dimen/_5sdp"
+                                            android:paddingRight="@dimen/_5sdp">
+
+                                        </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+                                        <TextView
+                                            android:layout_gravity="center"
+                                            android:id="@+id/min_progress_percent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/baloo_bhai"
+                                            android:paddingRight="@dimen/_3sdp"
+                                            android:text="0%"
+                                            android:textSize="@dimen/_8sdp"
+                                            android:textColor="#DC0F00">
+
+                                        </TextView>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
 
         <include
                 android:id="@+id/calendarLayout"
                 layout="@layout/activity_calendar"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginStart="@dimen/_16sdp"
                 android:layout_marginEnd="@dimen/_16sdp" />
+        </RelativeLayout>
 
 
-    </LinearLayout>
-
-            <!-- Attendance Info -->
-<!--            <FrameLayout-->
-<!--                android:id="@+id/attendance_info"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:visibility="visible"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent">-->
-
-                <!-- Drawable aligned with the bottom -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
         <TextView
+            android:elevation="8dp"
             android:visibility="gone"
+            android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/attendance_info"
             android:id="@+id/attendance_info_text"
             android:layout_width="match_parent"
@@ -62,4 +463,21 @@
             android:padding="16dp"
             android:layout_marginLeft="@dimen/_16sdp"
             android:layout_marginRight="@dimen/_16sdp"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+            <!-- Attendance Info -->
+<!--            <FrameLayout-->
+<!--                android:id="@+id/attendance_info"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="visible"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent">-->
+
+                <!-- Drawable aligned with the bottom -->
+
 </RelativeLayout>

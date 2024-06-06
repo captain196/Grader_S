@@ -8,8 +8,8 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.grader_s" />
-                  <option name="mobileSdkAppId" value="1:156538689307:android:e08a16250978bc3c5aa5be" />
+                  <option name="appId" value="com.Grader.grader_s" />
+                  <option name="mobileSdkAppId" value="1:156538689307:android:5fc89dec03a2543c5aa5be" />
                   <option name="projectId" value="graders-1c047" />
                   <option name="projectNumber" value="156538689307" />
                 </ConnectionSetting>

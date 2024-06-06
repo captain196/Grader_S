@@ -7,7 +7,7 @@
     android:layout_marginTop="240dp"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
-    android:background="@color/theme"
+    android:background="@color/theme2"
     android:orientation="vertical"><!-- calendar_layout.xml -->
 
     <RelativeLayout
@@ -81,7 +81,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Sun"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Mon"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Tue"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Wed"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -125,7 +125,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Thu"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -136,7 +136,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Fri"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -147,7 +147,7 @@
             android:fontFamily="@font/langar"
             android:gravity="center"
             android:text="Sat"
-            android:textColor="#585652"
+            android:textColor="@color/theme3"
             android:textSize="16sp"
             android:textStyle="bold" />
 

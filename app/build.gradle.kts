@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
+
 }
 
 android {
@@ -9,11 +10,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.grader_s"
+        applicationId = "com.Grader.grader_s"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 5
+        versionName = "5.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -77,4 +78,18 @@ dependencies {
 
     implementation("io.coil-kt:coil:2.6.0")
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
+    implementation("com.airbnb.android:lottie:6.4.0")
+
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    implementation("com.github.chrisbanes:PhotoView:2.3.0")
+
+    implementation("com.github.bumptech.glide:glide:4.13.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
+
+
+
 }

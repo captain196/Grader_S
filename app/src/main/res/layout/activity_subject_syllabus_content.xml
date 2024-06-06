@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Subject_syllabus_content"
-    android:background="@color/theme"
+    android:background="@color/theme2"
     android:orientation="vertical">
     <include layout="@layout/toolbar"/>
 

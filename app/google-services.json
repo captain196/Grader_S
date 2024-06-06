@@ -8,9 +8,66 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:156538689307:android:5fc89dec03a2543c5aa5be",
+        "android_client_info": {
+          "package_name": "com.Grader.grader_s"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRrK6YLZbOgZUIkmUxWggY99KoGKQO44Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:156538689307:android:e08a16250978bc3c5aa5be",
         "android_client_info": {
           "package_name": "com.example.grader_s"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRrK6YLZbOgZUIkmUxWggY99KoGKQO44Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156538689307:android:1141b5ccc5cc07595aa5be",
+        "android_client_info": {
+          "package_name": "com.example.grader_t"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRrK6YLZbOgZUIkmUxWggY99KoGKQO44Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156538689307:android:7c32ea18f57bc5465aa5be",
+        "android_client_info": {
+          "package_name": "com.example.grader_teacher"
         }
       },
       "oauth_client": [],

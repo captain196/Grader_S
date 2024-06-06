@@ -3,12 +3,18 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/allerta_stencil</item>
         <item>@font/andika_new_basic</item>
+        <item>@font/baloo_bhai</item>
         <item>@font/caveat_brush</item>
+        <item>@font/coda_extrabold</item>
         <item>@font/fredoka_one</item>
         <item>@font/gidugu</item>
         <item>@font/grenze_light</item>
         <item>@font/grenze_thin</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/jockey_one</item>
         <item>@font/kurale</item>
         <item>@font/langar</item>
+        <item>@font/new_rocker</item>
+        <item>@font/rye</item>
     </array>
 </resources>

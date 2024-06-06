@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FFFFFFFF</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="theme">#E8E2D7</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_1">#585652</color>
+    <color name="text_2">#FFFFFF</color>
+    <color name="theme1">#FFFFFF</color>
+    <color name="theme2">#FEF2D3</color>
+    <color name="theme3">#F5AF00</color>
+    <color name="theme">#FEF2D3</color>
     <color name="button">#585652</color>
     <color name="hint_color">#999999</color>
     <color name="profile_page">#3C3322</color>
